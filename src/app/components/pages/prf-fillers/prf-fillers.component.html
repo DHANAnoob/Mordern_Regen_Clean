@@ -1,0 +1,398 @@
+
+<!-- Page Banner -->
+<div
+    class="page-banner-area three ptb-100"
+    style="background-image: url(assets/images/hospital/page-banner/bg-3.jpg);"
+>
+    <div class="container">
+        <div class="page-banner-content">
+            <h2>PRF Fillers</h2>
+            <ul class="pages-list">
+                <li><a routerLink="/index-5">Home</a></li>
+                <li>PRF Fillers</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="page-banner-area osteoText ptb-100">
+    <div class="container">
+        <p>PRF Fillers, short for Platelet-Rich Fibrin Fillers, represent a cutting-edge approach to facial rejuvenation. Derived directly from your own blood, PRF Fillers specialize in reviving areas that bear the marks of time. In contrast to Platelet-Rich Plasma (PRP), PRF offers a more concentrated blend of white blood cells, stem cells, fibrin, and growth factors – all vital components for stimulating collagen and revitalizing the skin. This makes PRF an all-natural filler that harnesses your body's healing mechanisms for authentic, age-defying results.</p>
+    </div>
+</div>
+
+<!-- carosel -->
+<div
+    class="blog-area pt-100 pb-75 bg-f1f5fe "
+    [ngClass]="{'d-block': router.url === '/index-7'}"
+>
+    <div class="container">
+        <!-- <div class="section-title with-covid-color">
+            <span class="sub-title"></span>
+            <h2>Our Latest News</h2>
+        </div> -->
+        <div class="covid-blog-slides">
+            <owl-carousel-o [options]="blogSlides">
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/1.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 21, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Under Eyes
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/2.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 20, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Temples
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/3.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 19, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Nasolabial
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/4.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 19, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Lips
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/5.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 19, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Jawline
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/6.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 19, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Chin
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="covid-blog-card">
+                        <div class="blog-image">
+                            <a routerLink="/blog-details" class="d-block">
+                                <img src="../../../../assets/images/prf img/7.png" alt="image">
+                            </a>
+                        </div>
+                        <div class="blog-content">
+                            <!-- <span>Nov 19, 2023</span> -->
+                            <h3>
+                                <a class="d-flex justify-content-center">
+                                    Cheeks
+                                </a>
+                            </h3>
+                            <!-- <a routerLink="/blog-details" class="news-btn">Read More News</a> -->
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-100 pb-75">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+            <div class="dental-tourism-choose-image">
+                <img src="assets/images/dental-tourism/choose/choose.png" alt="choose-image">
+                <button class="video-btn" (click)="openPopup()">
+                    <i class='bx bx-play'></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="dental-tourism-choose-content">
+                <!-- <span class="sub-title">
+                    <i class="flaticon-198-hashtag-1"></i>
+                    Why Choose Us
+                </span> -->
+                <h2>The Treatment</h2>
+                <!-- <p>We offer one of the most effective treatment, which is a combination of Fluoroscopy, Arthrogram, and AARP injection</p> -->
+                <div class="choose-inner-content">
+                    <i class='bx bxs-badge-check'></i>
+                    <h4>Blood Sample Extraction
+                    </h4>
+                    <p>In the initial step, a small blood sample is taken from the patient, usually from the arm. This sample serves as the source of essential components needed for the PRF treatment.
+                    </p>
+                </div>
+                <div class="choose-inner-content">
+                    <i class='bx bxs-badge-check'></i>
+                    <h4>Centrifugation
+                    </h4>
+                    <p>The extracted blood sample undergoes precise centrifugation, a process that separates the blood into its various components. This separation isolates the growth factors, fibrins, and platelets, which are critical for the rejuvenation process.
+                    </p>
+                </div>
+                <div class="choose-inner-content">
+                    <i class='bx bxs-badge-check'></i>
+                    <h4>Expert Injection
+                    </h4>
+                    <p> Skilled medical professionals with expertise in PRF treatments administer the PRF solution. They use precise injection techniques to ensure the solution reaches the target areas effectively, such as lips, cheeks, jawline, temple, under eyes, nasolabial and chin.
+                    </p>
+                </div>
+                <div class="choose-inner-content">
+                    <i class='bx bxs-badge-check'></i>
+                    <h4>Gradual Restoration
+                    </h4>
+                    <p>Unlike synthetic fillers that provide immediate results, PRF operates at a cellular level. It stimulates collagen production and gradually restores volume and youthful definition over a period of time, leading to natural-looking and enduring results.
+                    </p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- cards -->
+<div
+    class="eye-care-features-area bg-eef9ff pt-100 pb-75"
+>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-1.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>
+                            Natural Collagen Stimulation
+                        </h3>
+                        <p> PRF stimulates your body's natural collagen production, revitalizing and reshaping facial areas. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-2.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>
+                            Safety Profile
+                        </h3>
+                        <p>With PRF, you're using your own blood, minimizing the risk of allergic reactions. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-3.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>
+                            Non-Surgical Approach
+                        </h3>
+                        <p>PRF Fillers offer a non-surgical and minimally invasive approach to facial rejuvenation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-3.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>
+                            Adaptable Solutions
+                        </h3>
+                        <p>PRF treatments can be tailored to address individual concerns. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-3.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>
+                            Lasting Results
+                        </h3>
+                        <p>Although gradual, PRF's outcomes persist due to sustained collagen activation. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-3.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>
+                            Minimal Side Effects
+                        </h3>
+                        <p>PRF's organic nature ensures fewer complications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Choose Us Section for Home Demo - 5 -->
+<div
+    class="skin-care-dry-area ptb-100"
+    [ngClass]="{'d-block': router.url === '/index-5'}"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="skin-care-dry-content">
+                    <!-- <span class="sub-title"># Treatment Dry Skin</span> -->
+                    <h2>Is It Right For You?</h2>
+                    <p>PRF Fillers are ideal for individuals looking to regain or enhance facial volume and definition naturally, without synthetic fillers. However, it might not be suitable for</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="list">
+                                <li><i class='bx bx-check'></i>Those with active cancer or undergoing chemotherapy.</li>
+                                <li><i class='bx bx-check'></i>Current smokers</li>
+                                <li><i class='bx bx-check'></i>Those with unrealistic expectations.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <ul class="list">
+                                <li><i class='bx bx-check'></i>Those with Hemophiliacs</li>
+                                <li><i class='bx bx-check'></i> People with compromised immune systems </li>
+                                <li><i class='bx bx-check'></i>Individuals on high doses of blood thinners</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <ul class="dry-list">
+                        <li><img src="assets/images/skin-care/dry/image-1.jpg" class="rounded-circle" alt="image"></li>
+                        <li><img src="assets/images/skin-care/dry/image-2.jpg" class="rounded-circle" alt="image"></li>
+                        <li><img src="assets/images/skin-care/dry/image-3.jpg" class="rounded-circle" alt="image"></li>
+                        <li class="title">5k+ Positive Reviews</li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="skin-care-dry-image">
+                    <img src="assets/images/skin-care/dry/dry.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq_area section_padding_130" id="faq">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h3><span>Frequently </span> Asked Questions</h3>
+                    <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- FAQ Area-->
+            <div class="col-12 col-sm-10 col-lg-8">
+                <div class="accordion faq-accordian" id="faqAccordion">
+
+
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" *ngFor="let item of faq">
+                        <div class="card-header" id="headingOne" (click)="expand(item)">
+                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{item.question}}<span class="lni-chevron-up"></span></h6>
+                        </div>
+                        <!-- class="collapse" -->
+                        <div  id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion" *ngIf="item.expand">
+                            <div class="card-body">
+                                {{item.answer}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Support Button-->
+                <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="lni-emoji-sad"></i>
+                    <p class="mb-0 px-2">Can't find your answers?</p>
+                    <a routerLink="/contact-us-3"> Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

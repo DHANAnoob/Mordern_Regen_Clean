@@ -1,0 +1,401 @@
+<div
+    class="page-banner-area three ptb-100"
+    style="background-image: url(assets/images/hospital/page-banner/bg-3.jpg);"
+>
+    <div class="container">
+        <div class="page-banner-content">
+            <h2>Spa Treatments</h2>
+            <ul class="pages-list">
+                <li><a routerLink="/index-5">Home</a></li>
+                <li>Spa Treatments</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="skin-care-services-area pt-100 pb-75 bg-eff8fb">
+    <div class="container">
+        <div class="section-title">
+        <button (click)="trigger1()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                PRP fillers
+            </span>
+        </button>
+        <button (click)="trigger2()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                Beauty Model/Face 
+            </span>
+        </button>
+        <button (click)="trigger3()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                Cosmetics 
+            </span>
+        </button>
+        <button (click)="trigger4()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                Hair  removal 
+            </span>
+        </button>
+        <button (click)="trigger5()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                Hair  Restoration 
+            </span>
+        </button>
+        <button (click)="trigger6()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                Sexual Health 
+            </span>
+        </button>
+        <button (click)="trigger7()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->
+                Weight Loss
+            </span>
+        </button>
+            <h2>Our Most Popular Services</h2>
+        </div>
+        <div *ngIf="prp" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="../../../../assets/images/prf img/3.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-172-skin-care"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                <li routerLink="/portfolio" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    <a href="">Nasolabial</a>
+                                </li>
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="prfImgs" src="../../../../assets/images/prf img/4.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-173-acupuncture"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Lips
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="prfImgs" src="../../../../assets/images/prf img/7.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-174-hair-removal"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Cheeks
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="prfImgs" src="../../../../assets/images/prf img/6.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-176-laser"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Chin
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="prfImgs" src="../../../../assets/images/prf img/5.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-175-botox"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Jawlines
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="prfImgs" src="../../../../assets/images/prf img/2.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-177-facial-treatment"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Temples
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="prfImgs" src="../../../../assets/images/prf img/1.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-177-facial-treatment"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Under Eyes
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+        <div *ngIf="beauty" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="modelingImgs" src="../../../../assets/images/modeling/8.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-172-skin-care"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                PRP Facial
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img class="modelingImgs" src="../../../../assets/images/modeling/9.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-173-acupuncture"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Micro Needling
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>      
+        </div>   
+        <div *ngIf="cosmetics" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-1.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-172-skin-care"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                PRP Breast
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-2.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-173-acupuncture"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Scars Regeneration
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-2.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-173-acupuncture"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Stretch marks
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <div *ngIf="hairRemoval" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-3.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-174-hair-removal"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Hair  removal
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>       
+        </div> 
+        <div *ngIf="hairRestoration" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-3.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-174-hair-removal"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Hair  Restoration
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>       
+        </div> 
+        <div *ngIf="sexualHealth" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-3.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-174-hair-removal"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                O Shot
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>       
+        </div>    
+        <div *ngIf="weightLoss" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/skin-care/services/services-3.jpg" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-174-hair-removal"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content">
+                        <h3>
+                            <a routerLink="/service-details">
+                                Weight Loss
+                            </a>
+                        </h3>
+                        <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>       
+        </div>    
+</div>
+
+

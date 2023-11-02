@@ -1,0 +1,429 @@
+.osteoText{
+    background: none;
+    p{
+        font-size: 24px !important;
+    }
+}
+.eye-care-features-card {
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+        top: 0;
+        content: "";
+        width: 1px;
+        right: -20px;
+        height: 100%;
+        position: absolute;
+        background-color: #d7e2f9;
+    }
+    .features-image {
+        margin-bottom: 30px;
+    }
+    .features-content {
+        h3 {
+            margin-bottom: 15px;
+            font: {
+                size: 24px;
+                weight: 500;
+                family: var(--font-family2);
+            };
+            a {
+                color: var(--black-color2);
+
+                &:hover {
+                    color: var(--main-color2);
+                }
+            }
+        }
+        p {
+            margin-bottom: 0;
+            color: var(--paragraph-color2);
+        }
+    }
+}
+.dental-tourism-choose-image {
+    position: relative;
+    text-align: center;
+
+    .video-btn {
+        background-color: var(--main-color2);
+        transition: var(--transition);
+        transform: translateY(-50%);
+        color: var(--white-color);
+        display: inline-block;
+        border-radius: 50px;
+        position: absolute;
+        font-size: 60px;
+        height: 80px;
+        border: none;
+        width: 80px;
+        padding: 0;
+        right: 0;
+        top: 50%;
+        left: 0;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+        i {
+            left: 0;
+            right: 0;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            background-color: var(--main-color);
+        }
+    }
+}
+.dental-tourism-choose-content {
+    .sub-title {
+        
+        position: relative;
+        margin-bottom: 18px;
+        border-radius: 50px;
+        display: inline-block;
+        color: var(--white-color);
+        padding: 10px 20px 10px 40px;
+        background-color: var(--main-color2);
+        box-shadow: rgba(149, 157, 165, 0.15) 0px 8px 24px;
+        font: {
+            size: 15px;
+            weight: 500;
+        };
+        i {
+            transform: translateY(-50%);
+            position: absolute;
+            margin-top: 2px;
+            left: 20px;
+            top: 50%;
+        }
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+    }
+    p {
+        color: var(--paragraph-color2);
+    }
+    .choose-inner-content {
+        margin-top: 25px;
+        position: relative;
+        padding-left: 35px;
+
+        i {
+            color: var(--main-color2);
+            position: absolute;
+            font-size: 22px;
+            top: 2px;
+            left: 0;
+        }
+        h4 {
+            margin-bottom: 10px;
+            font: {
+                size: 24px;
+                weight: 500;
+                family: var(--font-family2);
+            };
+        }
+    }
+}
+// .faq{
+//     padding: 150px 0;
+//     background-color: $light;
+//     &::before{
+//         position: absolute;
+//         content: "";
+//         top:150px;
+//         left: 0px;
+//         width: 100%;
+//         height: 90%;
+//         background-size: contain;
+//         background-image: url(../../assets/images/faq/faq-backlayer-icons.svg);
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         z-index: 0;
+//     }
+//     small{
+//         color: $gray-400;
+//         padding-bottom: 30px;
+//         font-weight: $font-weight-semibold;
+//     }
+//     h2{
+//         font-weight: $font-weight-semibold;
+//     }
+//     .accordion-block{
+//         padding-top: 50px;
+//         .accordion-button{
+//             font-weight: $font-weight-semibold;
+//            &:not(.collapsed)::after{
+//                 height: 5px;
+//                 width: 15px;
+//                 background-size: contain;
+//                 top: -4px;
+//             }
+//         }
+//         .accordion-body
+//         {
+//             color: $gray-400;
+//             line-height: 30px;
+//         }
+//     }
+// }
+.skin_arth_buttons{
+    // opacity: 0;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.skin-care-services-card {
+    margin-bottom: 25px;
+    transition: var(--transition);
+
+    .services-image {
+        position: relative;
+
+        .icon {
+            background-color: var(--main-color2);
+            transition: var(--transition);
+            color: var(--white-color);
+            border-radius: 50px;
+            position: absolute;
+            text-align: center;
+            font-size: 50px;
+            bottom: -30px;
+            height: 100px;
+            width: 100px;
+            left: 30px;
+
+            i {
+                left: 0;
+                right: 0;
+                top: 50%;
+                line-height: 1;
+                margin-top: 2px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .services-content {
+        padding: 55px 30px 30px;
+        transition: var(--transition);
+        background-color: var(--white-color);
+
+        h3 {
+            margin-bottom: 12px;
+            font: {
+                size: 24px;
+                weight: 500;
+                family: var(--font-family2);
+            };
+            a {
+                color: var(--black-color2);
+            }
+        }
+        p {
+            transition: var(--transition);
+            color: var(--paragraph-color2);
+        }
+    }
+    &:hover {
+        transform: translateY(-5px);
+
+        .services-image {
+            .icon {
+                background-color: var(--white-color);
+                color: var(--main-color2);
+            }
+        }
+        .services-content {
+            background-color: var(--main-color2);
+    
+            h3 {
+                color: var(--white-color);
+
+                a {
+                    color: var(--white-color);
+                }
+            }
+            p {
+                color: var(--white-color);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .skin-care-services-card {
+        .services-image {
+            .icon {
+                font-size: 30px;
+                bottom: -20px;
+                height: 60px;
+                width: 60px;
+                left: 20px;
+            }
+        }
+        .services-content {
+            padding: 35px 20px 20px;
+    
+            h3 {
+                margin-bottom: 10px;
+                font-size: 19px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .skin-care-services-card {
+        .services-image {
+            .icon {
+                font-size: 40px;
+                bottom: -25px;
+                height: 80px;
+                width: 80px;
+                left: 25px;
+            }
+        }
+        .services-content {
+            padding: 45px 25px 25px;
+    
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .skin-care-services-card {
+        .services-image {
+            position: relative;
+    
+            .icon {
+                font-size: 40px;
+                bottom: -25px;
+                height: 80px;
+                width: 80px;
+                left: 25px;
+            }
+        }
+        .services-content {
+            padding: 45px 25px 25px;
+    
+            h3 {
+                font-size: 23px;
+            }
+        }
+    }
+
+}
+// faq
+body{margin-top:20px;}
+.section_padding_130 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.faq_area {
+    position: relative;
+    z-index: 1;
+    background-color: #f5f5ff;
+}
+
+.faq-accordian {
+    position: relative;
+    z-index: 1;
+}
+.faq-accordian .card {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+}
+.faq-accordian .card:last-child {
+    margin-bottom: 0;
+}
+.faq-accordian .card .card-header {
+    background-color: #ffffff;
+    padding: 0;
+    border-bottom-color: #ebebeb;
+}
+.faq-accordian .card .card-header h6 {
+    cursor: pointer;
+    padding: 1.75rem 2rem;
+    color: #3f43fd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.faq-accordian .card .card-header h6 span {
+    font-size: 1.5rem;
+}
+.faq-accordian .card .card-header h6.collapsed {
+    color: #070a57;
+}
+.faq-accordian .card .card-header h6.collapsed span {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.faq-accordian .card .card-body {
+    padding: 1.75rem 2rem;
+}
+.faq-accordian .card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+    .support-button p {
+        font-size: 14px;
+    }
+}
+
+.support-button i {
+    color: #3f43fd;
+    font-size: 1.25rem;
+}
+@media only screen and (max-width: 575px) {
+    .support-button i {
+        font-size: 1rem;
+    }
+}
+
+.support-button a {
+    text-transform: capitalize;
+    color: #2ecc71;
+}
+@media only screen and (max-width: 575px) {
+    .support-button a {
+        font-size: 13px;
+    }
+}
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
