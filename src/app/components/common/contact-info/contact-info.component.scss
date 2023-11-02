@@ -243,7 +243,6 @@
             }
         }
     }
-
 }
 
 /* Min width 576px to Max width 767px */
@@ -270,7 +269,10 @@
             }
         }
     }
-
+    .card {
+        width: 350px;
+        height: 350px;  
+    }
 }
 
 /* Min width 992px to Max width 1199px */
@@ -296,6 +298,10 @@
             }
         }
     }
+    .card {
+        width: 450px;
+        height: 450px;  
+    }
 
 }
 // .prfImgs{
@@ -305,10 +311,20 @@
 // }
 
 /* Min width 1200px to Max width 1399px */
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .card {
+        width: 500px;
+        height: 500px;  
+    }
+}
 
 /* Min width 1600px */
-@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1600px) {
+    .card {
+        width: 500px;
+        height: 500px;  
+    }
+}
 // .skin-care-services-card {
 //     height: 0;
 //     padding-bottom: 100%; /* 1:1 aspect ratio (square) */
@@ -333,10 +349,7 @@
 // }
 
 .card {
-    width: 500px;
-    height: 500px;
-    transition: all 0.5s;
-    
+    transition: all 0.5s;  
 }
 .card:hover{
     background-color: #3DBD8D;

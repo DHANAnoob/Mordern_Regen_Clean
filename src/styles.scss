@@ -1695,7 +1695,13 @@ img {
 
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width : 576px) and (max-width : 767px) {
-
+    // added
+    // .osteoText{
+    //     background: none;
+    //     p{
+    //         font-size: 3rem !important;
+    //     }
+    // }
     // Video Popup
     .video-popup {
         .popup-inner {
@@ -1710,9 +1716,7 @@ img {
             }
         }
     }
-
 }
-
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
