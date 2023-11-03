@@ -121,6 +121,13 @@ import { WhyChooseUsComponent } from './components/common/why-choose-us/why-choo
 // import { FeaturesComponent } from './components/common/features/features.component';
 import { FeedbackComponent } from './components/common/feedback/feedback.component';
 import { PartnerComponent } from './components/common/partner/partner.component';
+import { HairRemovalComponent } from './components/pages/hair-removal/hair-removal.component';
+import { ScarRegenComponent } from './components/pages/scar-regen/scar-regen.component';
+import { StretchMarksComponent } from './components/pages/stretch-marks/stretch-marks.component';
+import { MeetOurTeamComponent } from './components/pages/meet-our-team/meet-our-team.component';
+import { HairRestorationComponent } from './components/pages/hair-restoration/hair-restoration.component';
+import { MembershipComponent } from './components/pages/membership/membership.component';
+import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-regen.component';
 @NgModule({
     declarations: [
         PartnerComponent,
@@ -163,6 +170,13 @@ import { PartnerComponent } from './components/common/partner/partner.component'
         PrpFacialComponent,
         DexDetoxComponent,
         WeightLossComponent,
+        HairRemovalComponent,
+        ScarRegenComponent,
+        StretchMarksComponent,
+        MeetOurTeamComponent,
+        HairRestorationComponent,
+        MembershipComponent,
+        TissueRegenComponent,
     ],
     imports: [
         BrowserModule,

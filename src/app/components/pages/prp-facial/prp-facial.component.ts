@@ -13,9 +13,6 @@ export class PrpFacialComponent {
     public router: Router
   ) { }
   ngOnInit(): void {
-
-
-
     this.faq = [
       {
         id: 1,

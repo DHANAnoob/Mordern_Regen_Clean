@@ -2,14 +2,12 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
-
 @Component({
-  selector: 'app-prf-fillers',
-  templateUrl: './prf-fillers.component.html',
-  styleUrls: ['./prf-fillers.component.scss']
+  selector: 'app-scar-regen',
+  templateUrl: './scar-regen.component.html',
+  styleUrls: ['./scar-regen.component.scss']
 })
-export class PrfFillersComponent {
-
+export class ScarRegenComponent {
   faq: any = [];
   constructor(
     public router: Router
@@ -18,44 +16,31 @@ export class PrfFillersComponent {
     this.faq = [
       {
         id: 1,
-        question: '1.Is PRF treatment safe?',
-        answer: 'Yes, PRF Fillers are extremely safe due to their autologous nature.',
+        question: '1.What indications benefit from Tixel treatment?',
+        answer: "Tixel treatment is ideal for addressing acne scars, stretch marks, fine lines, wrinkles, and active acne",
         expand: false
       },
       {
         id: 2,
-        question: '2.How do PRP and PRF differ?',
-        answer: "PRF offers more enduring and concentrated results compared to PRP.",
+        question: '2.What is the post-care treatment?',
+        answer: "Patients may experience mild redness, swelling, and tiny scabs lasting up to 72 hours post-treatment. Avoid vigorous physical activity, hot showers, and direct sun exposure for the first 24 hours.",
         expand: false
       },
       {
         id: 3,
-        question: '3.What is the downtime after PRF treatment?',
-        answer: 'Minimal downtime, with transient side effects usually resolving within a few days.',
+        question: '3.How often are treatments repeated? When can the results be seen?',
+        answer: "Tixel treatment is typically repeated every 4 to 6 weeks. Full results are visible after completing the sixth session, but significant improvement can be seen even after a couple of treatments.",
         expand: false
       },
       {
         id: 4,
-        question: '4. Are there adverse reactions to PRF treatment? ',
-        answer: "Adverse reactions are minimal thanks to PRF's autologous nature.",
+        question: '4.Is Tixel safe?',
+        answer: "Yes, Tixel is a safe, non-invasive procedure with minimal risk of scarring or infection. It's pain-free and suitable for individuals who may be sensitive to pain or prefer a gentler approach. The procedure has no downtime, and patients can typically return to their regular activities after treatment.",
         expand: false
       },
-      {
-        id: 5,
-        question: '5. When do PRF results peak?        ',
-        answer: 'PRF results typically peak around four months post-treatment.',
-        expand: false
-      },
-      {
-        id: 6,
-        question: '6.How long do the results of PRF treatment last?',
-        answer: 'PRF results are enduring, with maintenance treatments available as needed.',
-        expand: false
-      }
     ]
 
   }
-  // Video Popup
   isOpen = false;
   blogSlides: OwlOptions = {
     nav: true,

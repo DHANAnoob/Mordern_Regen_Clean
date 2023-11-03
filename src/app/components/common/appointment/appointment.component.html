@@ -1,7 +1,7 @@
 <!-- Default Appointment Section -->
 <div
     class="appointment-overview-area pb-100"
-    [ngClass]="{'d-none': router.url === '/' ||router.url === '/index-5' || router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}"
+    [ngClass]="{'d-none': router.url === '/' || router.url === '/index-5'  || router.url === '/tissueRegen' ||  router.url === '/membership'  ||router.url === '/meetOurTeam'|| router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}"
 >
     <div class="container">
         <div class="row">
@@ -65,6 +65,127 @@
         </div>
     </div>
 </div>
+<!-- demo new -->
+<div
+    class="contact-area bg-color pb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/tissueRegen' ||router.url === '/meetOurTeam' || router.url === '/membership'}"
+>
+<div class="contact-area ptb-100">
+    <div class="container">
+        <div class="hospital-contact-form">
+            <div class="section-title with-hospital-color">
+                <span class="sub-title">Let Us Help You</span>
+                <h2>Have Queries Before The Appointment</h2>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" required placeholder="First Name">
+                        </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" required placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" required placeholder="Your email">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" name="phone_number" required class="form-control" placeholder="Your phone">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="msg_subject">Primary Concern</label>
+                            <select name="msg_subject" id="msg_subject" class="form-control" required>
+                                <option value="" class="dropdown-toggle">Select a Concern</option>
+                                <option value="Option 1">Acne & Acne Scars</option>
+                                <option value="Option 2">Anti-Aging</option>
+                                <option value="Option 3">Cellulite</option>
+                                <option value="Option 4">Double Chin</option>
+                                <option value="Option 5">Dry Skin</option>
+                                <option value="Option 6">Hair Loss</option>
+                                <option value="Option 7">Loose Body & Facial Skin</option>
+                                <option value="Option 8">Muscle Weakness</option>
+                                <option value="Option 9">Scar Repair</option>
+                                <option value="Option 10">Stretch Marks</option>
+                                <option value="Option 11">Stubborn Fat</option>
+                                <option value="Option 12">Sun Spots</option>
+                                <option value="Option 13">Toe Nail Fungus</option>
+                                <option value="Option 14">Unwanted Hair</option>
+                                <option value="Option 15">Wrinkles & Aging Skin</option>
+
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="msg_subject">Primary Treatment Of Intrest</label>
+                            <select name="msg_subject" id="msg_subject" class="form-control" required>
+                                <option value="">Select a Treatment</option>
+                                <option value="Option 1">Accent Prime</option>
+                                <option value="Option 2">AviClear Acne Treatment</option>
+                                <option value="Option 3">Botox</option>
+                                <option value="Option 4">Cellulite Reduction</option>
+                                <option value="Option 5">Chemical Peels</option>
+                                <option value="Option 6">ClearLift</option>
+                                <option value="Option 7">Diamond Glow</option>
+                                <option value="Option 8">Dye-VL</option>
+                                <option value="Option 9">Fat Reduction</option>
+                                <option value="Option 10">Hair Restoration</option>
+                                <option value="Option 11">Harmony XL Pro</option>
+                                <option value="Option 12">Hybrid CO2</option>
+                                <option value="Option 13">IV Vitamin Therapy</option>
+                                <option value="Option 14">Juvederm Voluma XC</option>
+                                <option value="Option 15">Juvederm Volbella XC'</option>
+                                <option value="Option 16">Kybella</option>
+                                <option value="Option 17">Laser Hair Removal</option>
+                                <option value="Option 18">Micro-Needling</option>
+                                <option value="Option 19">Opus</option>
+                                <option value="Option 20">Tattoo Removal</option>
+                                <option value="Option 21">TED Hair Restoration</option>
+                                <option value="Option 22">TruSculpt Flex</option>
+                                <option value="Option 23">TruSculpt ID</option>
+                                <!-- <option value="Option 15">TED Hair Restoration</option> -->
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>        
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="msg_subject">Where Are You In The Decision Making Process</label>
+                            <select name="msg_subject" id="msg_subject" class="form-control" required>
+                                <!-- <option value="" class="dropdown-toggle">Where Are You In The Decision Making Process</option> -->
+                                <option value="Option 1" class="dropdown-toggle">Make Your Selection</option>
+                                <option value="Option 2">I have no idea what I need/want</option>
+                                <option value="Option 3">I've researched a little but not sure</option>
+                                <option value="Option 4">I've researched but have more questions</option>
+                                <option value="Option 5">I know what I am looking for</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" cols="30" rows="5" required placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <button type="submit" class="default-btn">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
 
 <!-- Appointment Section for Home Demo - 2 -->
 <div
@@ -104,7 +225,7 @@
 <!-- Appointment Section for Home Demo - 3 -->
 <div
     class="appointment-area d-none"
-    [ngClass]="{'d-block': router.url === '/index-5' || router.url === '/appointment'||router.url === '/'}"
+    [ngClass]="{'d-block': router.url === '/index-5' || router.url === '/appointment' ||router.url === '/'}"
 >
     <!-- <div class="container">
         <div class="appointment-form">

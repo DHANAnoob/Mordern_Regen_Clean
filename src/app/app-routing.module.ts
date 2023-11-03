@@ -57,6 +57,14 @@ import { PrpFacialComponent } from './components/pages/prp-facial/prp-facial.com
 import { DexDetoxComponent } from './components/pages/dex-detox/dex-detox.component';
 import { WeightLossComponent } from './components/pages/weight-loss/weight-loss.component';
 import { BreastUpliftComponent } from './components/pages/breast-uplift/breast-uplift.component';
+import { HairRemovalComponent } from './components/pages/hair-removal/hair-removal.component';
+import { HairRestorationComponent } from './components/pages/hair-restoration/hair-restoration.component';
+import { ScarRegenComponent } from './components/pages/scar-regen/scar-regen.component';
+import { StretchMarksComponent } from './components/pages/stretch-marks/stretch-marks.component';
+import { MeetOurTeamComponent } from './components/pages/meet-our-team/meet-our-team.component';
+import { MembershipComponent } from './components/pages/membership/membership.component';
+import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-regen.component';
+
 
 const routes: Routes = [
     {path: '', component: HomeDemoFiveComponent},
@@ -115,6 +123,14 @@ const routes: Routes = [
     {path: 'dex-detox', component: DexDetoxComponent},
     {path: 'weightLoss', component: WeightLossComponent},
     {path: 'breastUplift', component: BreastUpliftComponent},
+    {path: 'hairRemoval', component:HairRemovalComponent},
+    {path: 'scarRegen', component:ScarRegenComponent},
+    {path: 'stretchMarks', component:StretchMarksComponent},
+    {path: 'meetOurTeam', component:MeetOurTeamComponent},
+    {path: 'hairRes', component:HairRestorationComponent},
+    {path: 'membership', component:MembershipComponent},
+    {path: 'tissueRegen', component:TissueRegenComponent},
+
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
 ];
 
