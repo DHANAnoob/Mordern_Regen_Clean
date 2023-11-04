@@ -11,7 +11,17 @@
                 <!-- <i class="flaticon-198-hashtag-1"></i> -->Osteoarthritis Treatment
             </span>
         </button>
-            <h2>Our Most Popular Services</h2>
+        <button (click)="newTrigger1()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->Sexual Health
+            </span>
+        </button>
+        <button (click)="newTrigger2()" class="skin_arth_buttons">
+            <span class="sub-title main-color">
+                <!-- <i class="flaticon-198-hashtag-1"></i> -->Tissue Regenaration
+            </span>
+        </button>
+            <h2>Our Services</h2>
         </div>
         <div *ngIf="skin" class="row justify-content-center">
             <div class="col-lg-4 col-sm-6">
@@ -118,7 +128,7 @@
                 <div class="skin-care-services-card ">
                     <div class="services-image">
                         <a routerLink="/sexualHealth" class="d-block">
-                            <img src="../../../../assets/images/o shot/1.png" alt="image">
+                            <img src="../../../../assets/images/weight loss/1.png" alt="image">
                         </a>
                         <!-- <div class="icon">
                             <i class="flaticon-177-facial-treatment"></i>
@@ -127,7 +137,7 @@
                     <div class="services-content text-center">
                         <h3>
                             <a routerLink="/sexualHealth text-center">
-                                Sexual Health
+                                Weight Loss
                             </a>
                         </h3>
                         <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
@@ -197,5 +207,91 @@
                 </div>
             </div>       
         </div>      
+
+        <div *ngIf="sexualHealth" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a class="d-block">
+                            <img src="../../../../assets/images/tissue regen/ortho gold.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-172-skin-care"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/tissueRegen">
+                                Ortho Gold
+                            </a>
+                        </h3>
+                        <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a  class="d-block">
+                            <img src="../../../../assets/images/tissue regen/uro gold.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-173-acupuncture"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/tissueRegen">
+                                Uro Gold
+                            </a>
+                        </h3>
+                        <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a  class="d-block">
+                            <img src="../../../../assets/images/tissue regen/derma gold.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-174-hair-removal"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/tissueRegen">
+                                Derma Gold
+                            </a>
+                        </h3>
+                        <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                    </div>
+                </div>
+            </div> 
+             
+        </div>  
+        <div *ngIf="tissueRegen" class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card">
+                    <div class="services-image">
+                        <a routerLink="/sexualHealth" class="d-block">
+                            <img src="../../../../assets/images/o shot/1.png" alt="image">
+                        </a>
+                        <!-- <div class="icon">
+                            <i class="flaticon-172-skin-care"></i>
+                        </div> -->
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/sexualHealth">
+                                Sexual Health
+                            </a>
+                        </h3>
+                        <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                    </div>
+                </div>
+            </div>       
+        </div>  
 </div>
 
