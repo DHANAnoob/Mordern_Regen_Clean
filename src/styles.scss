@@ -27,6 +27,24 @@
     // $gray-400: #7A8496 ; 
     // $gray-100: #F1F1F5 ;   
 }
+// new toggle
+/* Style your navigation links as needed */
+.toggle-link {
+    position: relative;
+    text-decoration: none;
+    color: #333; /* Change the color to your preference */
+  }
+  
+  .toggle-link::after {
+    content: " >"; /* Add the ">" symbol for the right toggle */
+    font-size: 13px;
+    margin-left: 5px; /* Adjust the spacing between the link and the toggle */
+    color: #999; /* Toggle color */
+  }
+  
+  
+  
+  
 body {
     margin: 0;
     padding: 0;

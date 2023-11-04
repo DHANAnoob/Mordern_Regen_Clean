@@ -1,7 +1,7 @@
 <!-- Default Appointment Section -->
 <div
     class="appointment-overview-area pb-100"
-    [ngClass]="{'d-none': router.url === '/' || router.url === '/index-5'  || router.url === '/tissueRegen' ||  router.url === '/membership'  ||router.url === '/meetOurTeam'|| router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}"
+    [ngClass]="{'d-none': router.url === '/' || router.url === '/home'  || router.url === '/tissueRegen' ||  router.url === '/membership'  ||router.url === '/meetOurTeam'|| router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}"
 >
     <div class="container">
         <div class="row">
@@ -53,9 +53,9 @@
                                 <h4>We Are a Certified and Award-winning Hospital</h4>
                                 <div class="box-image">
                                     <img src="assets/images/appointment/appointment-2.jpg" alt="appointment-image">
-                                    <button class="video-btn" (click)="openPopup()">
+                                    <!-- <button class="video-btn" (click)="openPopup()">
                                         <i class='bx bx-play'></i>
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@
                         <div class="form-group">
                             <label for="msg_subject">Primary Concern</label>
                             <select name="msg_subject" id="msg_subject" class="form-control" required>
-                                <option value="" class="dropdown-toggle">Select a Concern</option>
+                                <option value="" class="toggle-link">Select a Concern</option>
                                 <option value="Option 1">Acne & Acne Scars</option>
                                 <option value="Option 2">Anti-Aging</option>
                                 <option value="Option 3">Cellulite</option>
@@ -162,8 +162,8 @@
                         <div class="form-group">
                             <label for="msg_subject">Where Are You In The Decision Making Process</label>
                             <select name="msg_subject" id="msg_subject" class="form-control" required>
-                                <!-- <option value="" class="dropdown-toggle">Where Are You In The Decision Making Process</option> -->
-                                <option value="Option 1" class="dropdown-toggle">Make Your Selection</option>
+                                <!-- <option value="" class="toggle-link">Where Are You In The Decision Making Process</option> -->
+                                <option value="Option 1" class="toggle-link">Make Your Selection</option>
                                 <option value="Option 2">I have no idea what I need/want</option>
                                 <option value="Option 3">I've researched a little but not sure</option>
                                 <option value="Option 4">I've researched but have more questions</option>
@@ -225,7 +225,7 @@
 <!-- Appointment Section for Home Demo - 3 -->
 <div
     class="appointment-area d-none"
-    [ngClass]="{'d-block': router.url === '/index-5' || router.url === '/appointment' ||router.url === '/'}"
+    [ngClass]="{'d-block': router.url === '/home' || router.url === '/appointment' ||router.url === '/'}"
 >
     <!-- <div class="container">
         <div class="appointment-form">
@@ -257,7 +257,7 @@
         <div class="page-banner-content">
             <h2>Contact Us</h2>
             <ul class="pages-list">
-                <li><a routerLink="/index-5">Home</a></li>
+                <li><a routerLink="/home">Home</a></li>
                 <li>Contact Us</li>
             </ul>
         </div>
@@ -297,7 +297,7 @@
                             <div class="form-group">
                                 <label for="msg_subject">Choose a treatment</label>
                                 <select name="msg_subject" id="msg_subject" class="form-control" required>
-                                    <option value="" class="dropdown-toggle">Select a treatment</option>
+                                    <option value="" class="toggle-link">Select a treatment</option>
                                     <option value="Option 1">Osteoarthritis Treatment</option>
                                     <option value="Option 2">Spa Treatment</option>
                                     <!-- <option value="Option 3">Cellulite</option> -->
@@ -323,8 +323,8 @@
                             <div class="form-group">
                                 <label for="msg_subject">Where Are You In The Decision Making Process</label>
                                 <select name="msg_subject" id="msg_subject" class="form-control" required>
-                                    <!-- <option value="" class="dropdown-toggle">Where Are You In The Decision Making Process</option> -->
-                                    <option value="Option 1" class="dropdown-toggle">Make Your Selection</option>
+                                    <!-- <option value="" class="toggle-link">Where Are You In The Decision Making Process</option> -->
+                                    <option value="Option 1" class="toggle-link">Make Your Selection</option>
                                     <option value="Option 2">I have no idea what I need/want</option>
                                     <option value="Option 3">I've researched a little but not sure</option>
                                     <option value="Option 4">I've researched but have more questions</option>
@@ -426,7 +426,7 @@
 <!-- Appointment Section for Home Demo - 5 -->
 <div
     class="skin-care-appointment-area d-none"
-    [ngClass]="{'d-block': router.url === '/index-5'}"
+    [ngClass]="{'d-block': router.url === '/home'}"
 >
     <div class="container-fluid">
         <div class="row m-0">

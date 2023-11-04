@@ -71,7 +71,7 @@ const routes: Routes = [
     // {path: 'index-2', component: HomeDemoTwoComponent},
     // {path: 'index-3', component: HomeDemoThreeComponent},
     // {path: 'index-4', component: HomeDemoFourComponent},
-    {path: 'index-5', component: HomeDemoFiveComponent},
+    {path: 'home', component: HomeDemoFiveComponent},
     // {path: 'index-6', component: HomeDemoSixComponent},
     // {path: 'index-7', component: HomeDemoSevenComponent},
     // {path: 'index-8', component: HomeDemoEightComponent},
