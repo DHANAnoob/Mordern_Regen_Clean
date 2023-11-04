@@ -1496,6 +1496,12 @@
                         </ul>
                     </li> -->
                     <!-- Meet our team -->
+                    <!-- tissue regen -->
+                    <li class="nav-item" routerLink="/tissueRegen">
+                        <a href="javascript:void(0)" routerLink="/tissueRegen" class=" nav-link">
+                            Tissue Regeneration
+                        </a>
+                    </li>
                     <li class="nav-item" routerLink="/meetOurTeam">
                         <a href="javascript:void(0)" routerLink="/meetOurTeam" class=" nav-link">
                             Meet Our Team
@@ -1529,12 +1535,7 @@
                             Membership
                         </a>
                     </li>
-                       <!-- tissue regen -->
-                       <li class="nav-item" routerLink="/tissueRegen">
-                        <a href="javascript:void(0)" routerLink="/tissueRegen" class=" nav-link">
-                            Tissue Regeneration
-                        </a>
-                    </li>
+
                     <!-- contact us -->
                     <li class="nav-item">
                         <a href="javascript:void(0)" routerLink="/contact-us-3" class="nav-link">
@@ -1755,6 +1756,13 @@
                             </li>
                         </ul>
                     </li>
+                    <!-- tissue regen ham -->
+                    <li class="nav-item" routerLink="/tissueRegen" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                        <a href="javascript:void(0)" routerLink="/tissueRegen" class=" nav-link">
+                            Tissue Regeneration
+                        </a>
+                    </li>
                     <!-- meet our team ham -->
                     <li class="nav-item" routerLink="/meetOurTeam" routerLinkActive="active"
                         [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
@@ -1769,13 +1777,6 @@
                             Membership
                         </a>
                     </li>
-                     <!-- tissue regen ham -->
-                     <li class="nav-item" routerLink="/tissueRegen" routerLinkActive="active"
-                     [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                     <a href="javascript:void(0)" routerLink="/tissueRegen" class=" nav-link">
-                         Tissue Regeneration
-                     </a>
-                 </li>
                     <!-- conatct hamburger -->
                     <li class="nav-item">
                         <a href="javascript:void(0)" routerLink="/contact-us-3" class="nav-link"
