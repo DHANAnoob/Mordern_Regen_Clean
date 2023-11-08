@@ -12,6 +12,8 @@ import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFirestore } from '@angular/fire/firestore/'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -177,6 +179,8 @@ import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-reg
         HairRestorationComponent,
         MembershipComponent,
         TissueRegenComponent,
+        // AngularFireModule,
+        
     ],
     imports: [
         BrowserModule,
