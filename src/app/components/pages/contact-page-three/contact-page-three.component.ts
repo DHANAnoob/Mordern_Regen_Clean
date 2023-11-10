@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
-import emailjs, { send } from '@emailjs/browser'
+import emailjs, { send } from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-contact-page-three',
@@ -22,6 +23,9 @@ export class ContactPageThreeComponent {
     email: "",
     primeconcern:"",
     message: "",
+    lastname:"",
+    treatmentintrest:"",
+    decision:"",
   })
   constructor(private fb: FormBuilder) { }
 
@@ -45,13 +49,15 @@ export class ContactPageThreeComponent {
     emailjs.init('CP5q9y33rTigEtgyk')
     let response = await emailjs.send("service_8mdxj6r", "template_rlx7mgg", {
       firstname: this.reactiveForms.value.firstname,
-      // to_name: "dhana",
-      // first_name: "dhana",
       message: this.reactiveForms.value.message,
-      // reply_to: this.reactiveForms.value.to_name,
       email: this.reactiveForms.value.email,
       phonenumber: this.reactiveForms.value.phonenumber,
       primeconcern: this.reactiveForms.value.primeconcern,
+      lastname:this.reactiveForms.value.lastname,
+      treatmentintrest:this.reactiveForms.value.treatmentintrest,
+      decision:this.reactiveForms.value.decision,
+      // lastname:this.reactiveForms.value.primeconcern,
+
     });
     console.log(response);
     console.log(this.reactiveForms.value.firstname);

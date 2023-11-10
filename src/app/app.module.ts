@@ -12,8 +12,7 @@ import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { AngularFireModule } from '@angular/fire';
-// import { AngularFirestore } from '@angular/fire/firestore/'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -130,7 +129,25 @@ import { MeetOurTeamComponent } from './components/pages/meet-our-team/meet-our-
 import { HairRestorationComponent } from './components/pages/hair-restoration/hair-restoration.component';
 import { MembershipComponent } from './components/pages/membership/membership.component';
 import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-regen.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { environment } from '../environments/environment';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+// import { AppModule } from './app/AppModule.1';
+
 @NgModule({
+
+        // imports: [
+        //     provideFirebaseApp(() => initializeApp(config)),
+        //     provideFirestore(() => {
+        //         const firestore = getFirestore();
+        //         connectEmulator(firestore, 'localhost', 8080);
+        //         enableIndexedDbPersistence(firestore);
+        //         return firestore;
+        //     }),
+        //     provideStorage(() => getStorage()),
+        // ],
+   
     declarations: [
         PartnerComponent,
         FeedbackComponent,
@@ -183,6 +200,8 @@ import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-reg
         
     ],
     imports: [
+        
+        // ... other imports
         BrowserModule,
         AppRoutingModule,
         CarouselModule,
@@ -203,3 +222,15 @@ import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-reg
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+function provideFirestore(arg0: () => any): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
+    throw new Error('Function not implemented.');
+}
+function connectEmulator(firestore: any, arg1: string, arg2: number) {
+    throw new Error('Function not implemented.');
+}
+
+function enableIndexedDbPersistence(firestore: any) {
+    throw new Error('Function not implemented.');
+}
+

@@ -67,7 +67,7 @@ import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-reg
 
 
 const routes: Routes = [
-    {path: '', component: HomeDemoFiveComponent},
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     // {path: 'index-2', component: HomeDemoTwoComponent},
     // {path: 'index-3', component: HomeDemoThreeComponent},
     // {path: 'index-4', component: HomeDemoFourComponent},
