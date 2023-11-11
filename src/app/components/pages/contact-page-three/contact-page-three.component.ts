@@ -12,12 +12,7 @@ export class ContactPageThreeComponent {
 
 
   reactiveForms: FormGroup = this.fb.group({
-    reply_to: "jdhanasekar1999@gmail.com",
-    // firstname: "",
-    // phonenumber: "",
-    // email: "",
-    // primeconcern: "",
-    // message:"",
+    // reply_to: "jdhanasekar1999@gmail.com",
     firstname: "",
     phonenumber: "",
     email: "",
