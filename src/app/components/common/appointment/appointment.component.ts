@@ -24,46 +24,65 @@ export class AppointmentComponent {
         treatment:"",
         decision:"",
       })
-
+    checkboxChecked: boolean = false;
     constructor(
         public router: Router, private fb: FormBuilder
     ) {
-        this.appointmentForm = this.fb.group({
-            treatment: ['', Validators.required],
-            osteoOptions: [''],
-            spaOptions: [''],
-            firstname:[''],
-            lastname:[''],
-            email:[''],
-            phonenumber:[''],
-            decision:[''],
-            message:[''],
-        });
     }
-    async send() {
-        emailjs.init('CP5q9y33rTigEtgyk')
-        let response = await emailjs.send("service_8mdxj6r", "template_8lmplcq", {
-          firstname: this.appointmentForm.value.firstname,
-          message: this.appointmentForm.value.message,
-          email: this.appointmentForm.value.email,
-          phonenumber: this.appointmentForm.value.phonenumber,
-        //   primeconcern: this.appointmentForm.value.primeconcern,
-          lastname:this.appointmentForm.value.lastname,
-          treatment:this.appointmentForm.value.treatment,
-          decision:this.appointmentForm.value.decision,
-          osteoOptions:this.appointmentForm.value.osteoOptions,
-          spaOptions:this.appointmentForm.value.spaOptions,
-          // lastname:this.appointmentForm.value.primeconcern,
-    
+
+    ngOnInit(): void{
+        this.appointmentForm = this.fb.group({
+            treatment: [null, [Validators.required]],
+            osteoOptions: [null, [Validators.required]],
+            spaOptions:[null, [Validators.required]],
+            firstname:[null, [Validators.required]],
+            lastname:[null, [Validators.required]],
+            email:[null, [Validators.email,Validators.required]],
+            phonenumber:[null, [Validators.required]],
+            decision:[null, [Validators.required]],
+            message:[null, [Validators.required]],
+            check: [false, [Validators.requiredTrue]], 
         });
-        console.log(response);
-        console.log(this.appointmentForm.value.firstname);
-        console.log(this.appointmentForm.value.phonenumber);
-        console.log(this.appointmentForm.value.primeconcern);
-        
+
+    }
+    onCheckboxChange() {
+        this.checkboxChecked = !this.checkboxChecked;
+        // Reset the checkbox validation error when the checkbox is checked
+        if (this.checkboxChecked) {
+          this.appointmentForm.get('check')?.setErrors(null);
+        }
+      }
+    async send() {
+        if (this.appointmentForm.valid && this.checkboxChecked){
+            emailjs.init('CP5q9y33rTigEtgyk')
+            let response = await emailjs.send("service_8mdxj6r", "template_8lmplcq", {
+              firstname: this.appointmentForm.value.firstname,
+              message: this.appointmentForm.value.message,
+              email: this.appointmentForm.value.email,
+              phonenumber: this.appointmentForm.value.phonenumber,
     
-        alert('Message sent successfully');
-        this.appointmentForm.reset();
+              lastname:this.appointmentForm.value.lastname,
+              treatment:this.appointmentForm.value.treatment,
+              decision:this.appointmentForm.value.decision,
+              osteoOptions:this.appointmentForm.value.osteoOptions,
+              spaOptions:this.appointmentForm.value.spaOptions,
+        
+            });
+            console.log(response);
+            console.log(this.appointmentForm.value.firstname);
+            console.log(this.appointmentForm.value.phonenumber);
+            console.log(this.appointmentForm.value.primeconcern);
+            
+        
+            alert('Message sent successfully');
+            this.appointmentForm.reset();
+        }else {
+            if (!this.checkboxChecked) {
+              this.appointmentForm.get('check')?.setErrors({ required: true });
+            }
+            alert('Form is not valid. Please check your inputs.');
+          }
+       
     
       }
 
@@ -88,11 +107,16 @@ export class AppointmentComponent {
         const treatmentControl = this.appointmentForm.get('treatment');
         return treatmentControl ? treatmentControl.value === 'Osteoarthritis Treatment' : false;
     }
+    
 
     isSpaSelected() {
         const treatmentControl = this.appointmentForm.get('treatment');
         return treatmentControl ? treatmentControl.value === 'Spa Treatment' : false;
-
+    }
+    
+    isSoftwaveSelected() {
+        const treatmentControl = this.appointmentForm.get('treatment');
+        return treatmentControl ? treatmentControl.value === 'softWave' : false;
     }
 
     // Video Popup

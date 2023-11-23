@@ -3,6 +3,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+// import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -133,7 +134,6 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-// import { AppModule } from './app/AppModule.1';
 
 @NgModule({
 
@@ -202,6 +202,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
     imports: [
         
         // ... other imports
+        // MdbCarouselModule,
+        // CarouselModule.forRoot(),
         BrowserModule,
         AppRoutingModule,
         CarouselModule,

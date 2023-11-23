@@ -139,6 +139,15 @@ iframe {
     }
 
 }
+.checkError{
+    font-size: 16px;
+    color: red;
+}
+
+// small{
+//     font-size: 16px;
+//     color: red;
+// }
 
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width : 992px) and (max-width : 1199px) {}

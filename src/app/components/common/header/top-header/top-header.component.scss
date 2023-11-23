@@ -60,6 +60,7 @@
             background-color: rgba(255, 255, 255, 0.08);
 
             i {
+                // font-size: 50px;
                 left: 0;
                 right: 0;
                 top: 50%;
@@ -368,6 +369,7 @@
         list-style-type: none;
 
         li {
+            font-size: 16px;
             margin-right: 12px;
             position: relative;
             display: inline-block;
@@ -383,6 +385,7 @@
                 position: absolute;
             }
             a {
+                // font-size: 16px;
                 color: var(--white-color);
 
                 &:hover {
@@ -801,4 +804,8 @@
         };
     }
 
+}
+
+.headIcon{
+    font-size: 30px;
 }

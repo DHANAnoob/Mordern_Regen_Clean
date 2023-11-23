@@ -12,7 +12,6 @@ export class ContactPageThreeComponent {
 
 
   reactiveForms: FormGroup = this.fb.group({
-    // reply_to: "jdhanasekar1999@gmail.com",
     firstname: "",
     phonenumber: "",
     email: "",
@@ -22,48 +21,83 @@ export class ContactPageThreeComponent {
     treatmentintrest:"",
     decision:"",
   })
+
+  checkboxChecked: boolean = false;
   constructor(private fb: FormBuilder) { }
 
-  // ngOnInit(): void {
-  //   this.reactiveForms = new FormGroup({
-  //     firstname: new FormControl(null, [Validators.required]),
-  //     lastname: new FormControl(null, [Validators.required]),
-  //     email: new FormControl(null , [Validators.email,Validators.required]),
-  //     phoneNumber: new FormControl(null , [Validators.email,Validators.required]),
-  //     primeConcern:  new FormControl(null, [Validators.required]),
-  //     treatmentIntrest: new FormControl(null, [Validators.required]),
-  //     decision: new FormControl(null, [Validators.required]),
-  //     message: new FormControl(null, [Validators.required]),
-  //   });
-
-  // }
-  // formSubmitted(){
-  //   console.log(this.reactiveForms);
-  // }
-  async send() {
-    emailjs.init('CP5q9y33rTigEtgyk')
-    let response = await emailjs.send("service_8mdxj6r", "template_rlx7mgg", {
-      firstname: this.reactiveForms.value.firstname,
-      message: this.reactiveForms.value.message,
-      email: this.reactiveForms.value.email,
-      phonenumber: this.reactiveForms.value.phonenumber,
-      primeconcern: this.reactiveForms.value.primeconcern,
-      lastname:this.reactiveForms.value.lastname,
-      treatmentintrest:this.reactiveForms.value.treatmentintrest,
-      decision:this.reactiveForms.value.decision,
-      // lastname:this.reactiveForms.value.primeconcern,
-
+  ngOnInit(): void {
+    this.reactiveForms = this.fb.group({
+      firstname: [null, [Validators.required]],
+      lastname: [null, [Validators.required]],
+      email: [null, [Validators.email, Validators.required]],
+      phonenumber: [null, [Validators.required]],
+      primeconcern: [null, [Validators.required]],
+      treatmentintrest: [null, [Validators.required]],
+      decision: [null, [Validators.required]],
+      message: [null, [Validators.required]],
+      check: [false, [Validators.requiredTrue]], 
     });
-    console.log(response);
-    console.log(this.reactiveForms.value.firstname);
-    console.log(this.reactiveForms.value.phonenumber);
-    console.log(this.reactiveForms.value.primeconcern);
+  }
+  onCheckboxChange() {
+    this.checkboxChecked = !this.checkboxChecked;
+    // Reset the checkbox validation error when the checkbox is checked
+    if (this.checkboxChecked) {
+      this.reactiveForms.get('check')?.setErrors(null);
+    }
+  }
+  
+  // async send() {
+  //   emailjs.init('CP5q9y33rTigEtgyk')
+  //   let response = await emailjs.send("service_8mdxj6r", "template_rlx7mgg", {
+  //     firstname: this.reactiveForms.value.firstname,
+  //     message: this.reactiveForms.value.message,
+  //     email: this.reactiveForms.value.email,
+  //     phonenumber: this.reactiveForms.value.phonenumber,
+  //     primeconcern: this.reactiveForms.value.primeconcern,
+  //     lastname:this.reactiveForms.value.lastname,
+  //     treatmentintrest:this.reactiveForms.value.treatmentintrest,
+  //     decision:this.reactiveForms.value.decision,
+
+  //   });
+  //   console.log(response);
+  //   console.log(this.reactiveForms.value.firstname);
+  //   console.log(this.reactiveForms.value.phonenumber);
+  //   console.log(this.reactiveForms.value.primeconcern);
+  //   console.log(this.reactiveForms);
     
 
-    alert('Message sent successfully');
-    this.reactiveForms.reset();
+  //   alert('Message sent successfully');
+  //   this.reactiveForms.reset();
 
+  // }
+  async send() {
+    if (this.reactiveForms.valid && this.checkboxChecked) {
+      emailjs.init('CP5q9y33rTigEtgyk'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+      
+      let response = await emailjs.send("service_8mdxj6r", "template_rlx7mgg", {
+        firstname: this.reactiveForms.value.firstname,
+        message: this.reactiveForms.value.message,
+        email: this.reactiveForms.value.email,
+        phonenumber: this.reactiveForms.value.phonenumber,
+        primeconcern: this.reactiveForms.value.primeconcern,
+        lastname: this.reactiveForms.value.lastname,
+        treatmentintrest: this.reactiveForms.value.treatmentintrest,
+        decision: this.reactiveForms.value.decision,
+      });
+
+      console.log(response);
+      console.log(this.reactiveForms.value.firstname);
+      console.log(this.reactiveForms.value.phonenumber);
+      console.log(this.reactiveForms.value.primeconcern);
+      console.log(this.reactiveForms);
+
+      alert('Message sent successfully');
+      this.reactiveForms.reset();
+    } else {
+      if (!this.checkboxChecked) {
+        this.reactiveForms.get('check')?.setErrors({ required: true });
+      }
+      alert('Form is not valid. Please check your inputs.');
+    }
   }
-
-  
-}
+  }

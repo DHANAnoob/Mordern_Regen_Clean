@@ -295,6 +295,7 @@
                                     <option value="" class="toggle-link">Select a treatment</option>
                                     <option value="Osteoarthritis Treatment">Osteoarthritis Treatment</option>
                                     <option value="Spa Treatment">Spa Treatment</option>
+                                    <option value="softWave">Softwave Therapy</option>
                                 </select>
                             </div>
                         </div>
@@ -327,6 +328,18 @@
                                     </select>
                                 </div>
                             </div>
+
+                            <div *ngIf="isSoftwaveSelected()">
+                                <div class="form-group">
+                                    <label for="spa_options">Softwave Options</label>
+                                    <select formControlName="softWaveOptions" class="form-control">
+                                        <option  class="toggle-link">Select an option</option>
+                                        <option>OrthoGold</option>
+                                        <option>UroGold</option>
+                                        <option>DermaGold</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- ... other HTML code ... -->
@@ -350,6 +363,16 @@
                                     placeholder="Your message"></textarea>
                             </div>
                         </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="form-group">
+                              <input type="checkbox" name="check" formControlName="check" (change)="onCheckboxChange()">
+                              <label for="check">&nbsp;&nbsp;&nbsp;&nbsp;I AGREE TO THE TERMS OF USE AND MARKETING CONSENT</label>
+                            </div>
+                            <p>By checking the box on the contact form, you agree to the Terms of Use and Marketing Consent listed here: Communication through our website or via email are not encrypted and are not necessarily secure. Use of the internet or email is for your convenience only, and by using them, you assume the risk of unauthorized use. You hereby agree to hold Coastal Aesthetics, its doctors and affiliates, harmless from any hacking or any other unauthorized use of your personal information by outside parties. You also agree to opt-in to future marketing communications via SMS or Email.</p>
+                            <p class="checkError" *ngIf="!checkboxChecked || (appointmentForm.get('check')?.errors?.['required'] && appointmentForm.get('check')?.touched)">
+                              * Read the terms and conditions and agree to submit the form
+                            </p>
+                          </div>
                         <div class="col-lg-12 col-sm-12">
                             <button type="submit" value="Submit" class="default-btn">Send Message</button>
                         </div>
