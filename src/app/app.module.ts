@@ -134,6 +134,9 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { environment } from '../environments/environment';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { NonMedicalComponent } from './components/common/non-medical/non-medical.component';
+import { HomeOrthoComponent } from './components/common/home-ortho/home-ortho.component';
+import { HomeSoftComponent } from './components/common/home-soft/home-soft.component';
 
 @NgModule({
 
@@ -196,6 +199,9 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
         HairRestorationComponent,
         MembershipComponent,
         TissueRegenComponent,
+        NonMedicalComponent,
+        HomeOrthoComponent,
+        HomeSoftComponent,
         // AngularFireModule,
         
     ],

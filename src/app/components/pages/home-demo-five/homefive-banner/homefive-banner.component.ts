@@ -1,9 +1,10 @@
-import { Component, ViewEncapsulation, ViewChild,OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, QueryList, ViewChildren  } from '@angular/core';
 // import { CarouselAnimationEffect, CarouselComponent } from '@syncfusion/ej2-angular-navigations';
 // import { CarouselComponent } from 'angular-bootstrap-md';
 // import { MdbCarouselComponent } from 'angular-bootstrap-md';
 // import { CarouselComponent } from 'angular-bootstrap-md';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+// import { CarouselModule } from 'angular-bootstrap-md';
 
 // import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
@@ -15,11 +16,58 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 
 export class HomefiveBannerComponent implements OnInit {
   
-  // constructor(private el: ElementRef) {}
+  slides = [
+    {
+      image: '../../../../../assets/images/banner/Contact Us.png',
+      alt: 'Slide 1',
+      title: 'Slide 1 Title',
+      description: 'Description for Slide 1.'
+    },
+    {
+      image: '../../../../../assets/images/banner/Appointment.png',
+      alt: 'Slide 2',
+      title: 'Slide 2 Title',
+      description: 'Description for Slide 2.'
+    },
+    // Add more slides as needed
+  ];
+
+  currentSlide = this.slides[0];
+  private interval: any;
+  constructor() { }
+
 
   ngOnInit() {
-
+    this.startCarousel();
   }
+
+  ngOnDestroy(): void {
+    this.stopCarousel();
+  }
+
+  
+  private startCarousel() {
+    this.interval = setInterval(() => {
+      this.nextSlide();
+    }, 3000);
+  }
+  private stopCarousel() {
+    clearInterval(this.interval);
+  }
+
+  nextSlide() {
+    const currentIndex = this.slides.indexOf(this.currentSlide);
+    const nextIndex = (currentIndex + 1) % this.slides.length;
+    this.currentSlide = this.slides[nextIndex];
+  }
+
+  prevSlide() {
+    const currentIndex = this.slides.indexOf(this.currentSlide);
+    const prevIndex = (currentIndex - 1 + this.slides.length) % this.slides.length;
+    this.currentSlide = this.slides[prevIndex];
+  }
+
+  // ----------------------
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -46,23 +94,4 @@ export class HomefiveBannerComponent implements OnInit {
     },
     nav: true
   }
-  // ngAfterViewInit() {
-
-  //   this.runCarouselScript();
-  // }
-
-  // private runCarouselScript() {
-  //   const script = document.createElement('script');
-  //   script.type = 'text/javascript';
-  //   script.src = 'path-to-your-jquery-bootstrap-script.js'; // Replace with the path to your jQuery Bootstrap script
-  //   script.onload = () => {
-  //     $(this.el.nativeElement).find('#myCarousel').carousel({
-  //       interval: 3000 
-  //     });
-  //   };
-
-  //   document.head.appendChild(script);
-  // }
-  
-
 }

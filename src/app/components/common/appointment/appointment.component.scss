@@ -440,16 +440,16 @@
         }
     }
 }
-.skin-care-appointment-area {
-    background-color: var(--black-color2);
+// .skin-care-appointment-area {
+//     background-color: var(--black-color2);
 
-    .container-fluid {
-        padding: {
-            left: 0;
-            right: 0;
-        };
-    }
-}
+//     .container-fluid {
+//         padding: {
+//             left: 0;
+//             right: 0;
+//         };
+//     }
+// }
 .skin-care-appointment-image {
     height: 100%;
     background: {
@@ -770,16 +770,16 @@
             }
         }
     }
-    .skin-care-appointment-area {
-        padding-top: 60px;
+    // .skin-care-appointment-area {
+    //     padding-top: 60px;
 
-        .container-fluid {
-            padding: {
-                left: var(--bs-gutter-x,.75rem);
-                right: var(--bs-gutter-x,.75rem);
-            };
-        }
-    }
+    //     .container-fluid {
+    //         padding: {
+    //             left: var(--bs-gutter-x,.75rem);
+    //             right: var(--bs-gutter-x,.75rem);
+    //         };
+    //     }
+    // }
     .skin-care-appointment-image {
         height: auto;
         background-image: unset !important;
@@ -845,11 +845,11 @@
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width : 576px) and (max-width : 767px) {
 
-    .skin-care-appointment-area {
-        .container-fluid {
-            max-width: 540px;
-        }
-    }
+    // .skin-care-appointment-area {
+    //     .container-fluid {
+    //         max-width: 540px;
+    //     }
+    // }
 
 }
 
@@ -982,17 +982,17 @@
             }
         }
     }
-    .skin-care-appointment-area {
-        padding-top: 80px;
+    // .skin-care-appointment-area {
+    //     padding-top: 80px;
 
-        .container-fluid {
-            max-width: 720px;
-            padding: {
-                left: var(--bs-gutter-x,.75rem);
-                right: var(--bs-gutter-x,.75rem);
-            };
-        }
-    }
+    //     .container-fluid {
+    //         max-width: 720px;
+    //         padding: {
+    //             left: var(--bs-gutter-x,.75rem);
+    //             right: var(--bs-gutter-x,.75rem);
+    //         };
+    //     }
+    // }
     .skin-care-appointment-image {
         height: auto;
         background-image: unset !important;
@@ -1435,7 +1435,7 @@ iframe {
 
 }
 .checkError{
-    font-size: 16px;
+    font-size: 14px;
     color: red;
 }
 
