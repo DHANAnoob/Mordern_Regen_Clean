@@ -137,6 +137,9 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { NonMedicalComponent } from './components/common/non-medical/non-medical.component';
 import { HomeOrthoComponent } from './components/common/home-ortho/home-ortho.component';
 import { HomeSoftComponent } from './components/common/home-soft/home-soft.component';
+// import { CarouselConfig } from 'ngx-bootstrap/carousel';
+// import { CarouselModule } from 'ngx-bootstrap/carousel' as BsCarouselModule;
+import { CarouselModule as NgxCarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
 
@@ -152,6 +155,8 @@ import { HomeSoftComponent } from './components/common/home-soft/home-soft.compo
         // ],
    
     declarations: [
+        // CarouselConfig,
+   
         PartnerComponent,
         FeedbackComponent,
         FeaturesComponent,
@@ -210,6 +215,7 @@ import { HomeSoftComponent } from './components/common/home-soft/home-soft.compo
         // ... other imports
         // MdbCarouselModule,
         // CarouselModule.forRoot(),
+        NgxCarouselModule,
         BrowserModule,
         AppRoutingModule,
         CarouselModule,

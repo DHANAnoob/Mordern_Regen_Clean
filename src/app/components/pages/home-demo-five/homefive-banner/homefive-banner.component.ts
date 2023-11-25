@@ -5,13 +5,17 @@ import {Component, ElementRef, OnInit, QueryList, ViewChildren  } from '@angular
 // import { CarouselComponent } from 'angular-bootstrap-md';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 // import { CarouselModule } from 'angular-bootstrap-md';
+import { CarouselConfig } from 'angular-bootstrap-md';
 
 // import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 
 @Component({
   selector: 'app-homefive-banner',
   templateUrl: './homefive-banner.component.html',
-  styleUrls: ['./homefive-banner.component.scss']
+  styleUrls: ['./homefive-banner.component.scss'],
+  providers: [
+    { provide: CarouselConfig, useValue: { interval: 1500, noPause: true, showIndicators: true } }
+  ]
 })
 
 export class HomefiveBannerComponent implements OnInit {

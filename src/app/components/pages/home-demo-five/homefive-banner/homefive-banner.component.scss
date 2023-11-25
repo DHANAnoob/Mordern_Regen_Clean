@@ -51,7 +51,7 @@
 @media only screen and (max-width : 767px) {
 
     .skin-care-banner-area {
-        padding-top: 260px;
+        // padding-top: 260px;
 
         .container-fluid {
             padding: {
@@ -138,7 +138,7 @@
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
     .skin-care-banner-area {
-        padding-top: 230px;
+        // padding-top: 230px;
         
         .container-fluid {
             padding: {
@@ -244,7 +244,7 @@
     .skin-care-banner-area {
         .container-fluid {
             max-width: 1920px;
-            padding-left: 100px;
+            // padding-left: 100px;
         }
     }
     .skin-care-banner-content {
@@ -393,12 +393,29 @@ html, body {
   }
 
 //   caro chk
-// 
+// .ngxCaro{
+// }
+.bgDark{
+    background-color: #000000;
+}
+.carousel-caption{
+    h3{
+        color: white;
+    }
+}
+// .contentBox{
+//     display: flex;
+// }
+.caroImg{
+    height: 90vh;
+    width: 100vw;
+    opacity: 0.3;
+}
 
 .carousel {
     position: relative;
     width: 100%;
-    height: 70vh; /* Adjusted height for responsiveness */
+    height: 70vh;
     overflow: hidden;
 }
 
