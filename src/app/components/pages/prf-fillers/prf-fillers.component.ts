@@ -49,7 +49,8 @@ export class PrfFillersComponent {
       {
         id: 6,
         question: '6.How long do the results of PRF treatment last?',
-        answer: 'PRF results are enduring, with maintenance treatments available as needed.',
+        // answer: 'PRF results are enduring, with maintenance treatments available as needed.',
+        answer: 'PRF results lasts 6-12 weeks, with maintenance treatment available as needed.',
         expand: false
       }
     ]
