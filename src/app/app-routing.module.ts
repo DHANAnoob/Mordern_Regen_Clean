@@ -64,6 +64,8 @@ import { StretchMarksComponent } from './components/pages/stretch-marks/stretch-
 import { MeetOurTeamComponent } from './components/pages/meet-our-team/meet-our-team.component';
 import { MembershipComponent } from './components/pages/membership/membership.component';
 import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-regen.component';
+import { AppointmentComponent } from './components/common/appointment/appointment.component';
+// import { YourComponent } from './your-component/your-component.component';
 
 
 const routes: Routes = [
@@ -130,11 +132,14 @@ const routes: Routes = [
     {path: 'hairRes', component:HairRestorationComponent},
     {path: 'membership', component:MembershipComponent},
     {path: 'tissueRegen', component:TissueRegenComponent},
+    // {path: 'bookForm', component:AppointmentPageComponent},
+    { path: 'appointments/:section', component: AppointmentPageComponent},
 
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
 ];
 
 @NgModule({
+    // imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
