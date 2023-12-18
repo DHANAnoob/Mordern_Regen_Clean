@@ -1,5 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, HostListener,ViewChild,ElementRef,AfterViewInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
@@ -8,9 +8,30 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+
+    // @ViewChild('targetSection', { static: false }) targetSection!: ElementRef;
     constructor(
-        public router: Router
+        public router: Router,
     ) { }
+
+    // @ViewChild('targetSection', { static: false }) targetSection!: ElementRef;
+  
+    // constructor(private route: ActivatedRoute,public router:Router) {}
+  
+    // ngAfterViewInit(): void {
+    // }
+  
+    // scrollToTarget(): void {
+    //   if (this.targetSection) {
+    //     this.targetSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    //   }
+  
+    //   this.route.fragment.subscribe((fragment: string | null) => {
+    //     if (fragment === 'targetSection' && this.targetSection) {
+    //       this.targetSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    //   });
+    // }
 
     ngOnInit(): void {}
 

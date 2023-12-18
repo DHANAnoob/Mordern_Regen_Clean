@@ -95,7 +95,6 @@ export class WeightLossComponent {
     this.isOpen = false;
   }
   expand(item: any) {
-    debugger
     item.expand = !item.expand;
   }
 

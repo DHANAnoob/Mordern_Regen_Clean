@@ -1170,7 +1170,7 @@
 
 <!-- Navbar for Home Demo - 5 & 6 -->
 <div class="navbar-area navbar-style-three d-none"
-    [ngClass]="{'d-block': router.url === '/home'||  router.url === '/membership'||  router.url === '/tissueRegen' || router.url === '/hairRes'|| router.url === '/meetOurTeam' ||router.url === '/scarRegen'||router.url === '/stretchMarks'||router.url === '/microNeedling' ||router.url === '/hairRemoval' ||router.url === '/breastUplift'||router.url === '/weightLoss'||router.url === '/prpFacial'||router.url === '/dex-detox' || router.url === '/prfFillers' || router.url === '/sexualHealth' ||router.url === '/osteoarthritis' ||router.url === '/spaTreatments'||   router.url === '/contact-us-3'|| router.url === '/'|| router.url === '/appointment', 'sticky': isSticky}">
+    [ngClass]="{'d-block': router.url === '/home' ||router.url === '/chemicalPeel' ||router.url === '/ivtherapy' || router.url ==='/appointment;section=targetSection' ||  router.url === '/membership'||  router.url === '/tissueRegen' || router.url === '/hairRes'|| router.url === '/meetOurTeam' ||router.url === '/scarRegen'||router.url === '/stretchMarks'||router.url === '/microNeedling' ||router.url === '/hairRemoval' ||router.url === '/breastUplift'||router.url === '/weightLoss'||router.url === '/prpFacial'||router.url === '/dex-detox' || router.url === '/prfFillers' || router.url === '/sexualHealth' ||router.url === '/osteoarthritis' ||router.url === '/spaTreatments'||   router.url === '/contact-us-3'|| router.url === '/'|| router.url === '/appointment', 'sticky': isSticky}">
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
             <a class="navbar-brand" routerLink="/home" (click)="toggleClass()">
@@ -1344,6 +1344,18 @@
                                     </li>
                                 </ul>
 
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/ivtherapy" class="nav-link" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}">
+                                    IV Nutrient Therapy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/chemicalPeel" class="nav-link" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}">
+                                    Chemical Peel
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a routerLink="/weightLoss" class="nav-link" routerLinkActive="active"
@@ -1720,6 +1732,18 @@
 
                             </li>
                             <li class="nav-item">
+                                <a routerLink="/ivtherapy" class="nav-link" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    IV Nutrient Therapy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/chemicalPeel" class="nav-link" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Chemical Peel
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a routerLink="/weightLoss" class="nav-link" routerLinkActive="active"
                                     [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
                                     Weight Loss
@@ -1791,8 +1815,13 @@
                             <i class="flaticon-035-search-interface-symbol"></i>
                         </div>
                     </div> -->
-                    <div class="option-item">
+                    <!-- <div class="option-item">
                         <a routerLink="/appointment" class="default-btn two">
+                            Book An Appointment
+                        </a>
+                    </div> -->
+                    <div class="option-item">
+                        <a [routerLink]="['/appointment', { section: 'targetSection' }]" class="default-btn two">
                             Book An Appointment
                         </a>
                     </div>

@@ -34,9 +34,12 @@
                     <div class="services-content">
                         <h3>
                             <a routerLink="/osteoarthritis">
-                                <li routerLink="/osteoarthritis" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                    <a >Knee</a>
-                                </li>
+                                <!-- <li routerLink="/osteoarthritis" >
+                                    <a>Knee</a>
+                                </li> -->
+                                <a routerLink="/osteoarthritis">
+                                    Knee
+                                </a>
                             </a>
                         </h3>
                         <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
@@ -94,10 +97,9 @@
                     </div> -->
                     <div class="features-content">
                         <h3>
-                            Virtually Pain-Free
+                            Precise Diagnosis
                         </h3>
-                        <p>Soprano provides a nearly painless hair removal experience, 
-                            ensuring maximum comfort during and after the treatment.
+                        <p>Real-time X-ray pinpoints joint issues, aiding accurate treatment for osteoarthritis pain, stiffness, and inflammation.
                         </p>
                     </div>
                 </div>
@@ -109,10 +111,9 @@
                     </div> -->
                     <div class="features-content">
                         <h3>
-                            Suitable for All Skin Types
+                            Improved Functionality
                         </h3>
-                        <p>Regardless of your skin type, Soprano is safe and 
-                            effective, offering a solution for everyone.
+                        <p>Targeting root causes, our treatment promotes better joint functionality, enhancing mobility and daily activities.
                         </p>
                     </div>
                 </div>
@@ -124,10 +125,22 @@
                     </div> -->
                     <div class="features-content">
                         <h3>
-                            Quick and Convenient
+                            Rapid Recovery
                         </h3>
-                        <p>Soprano's fast treatment sessions save you time, making it 
-                            easy to fit into your schedule.
+                        <p>Our advanced treatment ensures a speedy recovery from osteoarthritis symptoms, minimizing downtime and restoring normalcy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
+                <div class="eye-care-features-card">
+                    <!-- <div class="features-image">
+                        <img src="assets/images/eye-care/features/features-3.png" alt="image">
+                    </div> -->
+                    <div class="features-content">
+                        <h3>Customized Care
+                        </h3>
+                        <p>Tailored treatment plans address individual needs, ensuring personalized care for optimal osteoarthritis management and patient satisfaction.
                         </p>
                     </div>
                 </div>
@@ -139,10 +152,9 @@
                     </div> -->
                     <div class="features-content">
                         <h3>
-                            Reduction of Ingrown Hairs
+                            Minimized Side Effects
                         </h3>
-                        <p>With Soprano, you can enjoy smoother skin free from 
-                            ingrown hairs, leading to a more enjoyable experience.
+                        <p>The carefully curated combination minimizes adverse effects, providing effective osteoarthritis relief with a focus on patient well-being.
                         </p>
                     </div>
                 </div>
@@ -154,24 +166,9 @@
                     </div> -->
                     <div class="features-content">
                         <h3>
-                            No Downtime
+                            Long-lasting Results
                         </h3>
-                        <p>Following a Soprano treatment, you can return to your regular 
-                            activities immediately, without any recovery period.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 pt-75 pb-75 col-sm-6">
-                <div class="eye-care-features-card">
-                    <!-- <div class="features-image">
-                        <img src="assets/images/eye-care/features/features-3.png" alt="image">
-                    </div> -->
-                    <div class="features-content">
-                        <h3>
-                            Safe and FDA-Approved
-                        </h3>
-                        <p>Soprano meets the highest safety standards and is FDA-approved, ensuring peace of mind for all patients.
+                        <p>Beyond immediate relief, our treatment aims for enduring benefits, offering sustained improvements in pain reduction and joint function.
                         </p>
                     </div>
                 </div>
@@ -182,13 +179,15 @@
 
 <div class="container pt-100 pb-75">
     <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-5 col-md-12">
             <div class="dental-tourism-choose-image">
                 <img src="../../../../assets/images/treatment/osteo.png" alt="choose-image">
                 <!-- <button class="video-btn" (click)="openPopup()">
                     <i class='bx bx-play'></i>
                 </button> -->
             </div>
+        </div>
+        <div class="col-lg-1 col-md-12">
         </div>
         <div class="col-lg-6 col-md-12">
             <div class="dental-tourism-choose-content">
@@ -221,6 +220,46 @@
     </div>
 </div>
 
+
+<!-- FAQ -->
+<div class="faq_area section_padding_130" id="faq">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <h3><span>Frequently </span> Asked Questions</h3>
+                    <!-- <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p> -->
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- FAQ Area-->
+            <div class="col-12 col-sm-10 col-lg-8">
+                <div class="accordion faq-accordian" id="faqAccordion">
+                    <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" *ngFor="let item of faq">
+                        <div class="card-header" id="headingOne" (click)="expand(item)">
+                            <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{item.question}}<span class="lni-chevron-up"></span></h6>
+                        </div>
+                        <!-- class="collapse" -->
+                        <div  id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion" *ngIf="item.expand">
+                            <div class="card-body">
+                                {{item.answer}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Support Button-->
+                <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <i class="lni-emoji-sad"></i>
+                    <p class="mb-0 px-2">Can't find your answers?</p>
+                    <a routerLink="/contact-us-3"> Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

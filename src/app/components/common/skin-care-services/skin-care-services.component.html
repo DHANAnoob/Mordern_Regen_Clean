@@ -11,11 +11,11 @@
                 <!-- <i class="flaticon-198-hashtag-1"></i> -->Osteoarthritis Treatment
             </span>
         </button>
-        <button (click)="newTrigger1()" class="skin_arth_buttons">
+        <!-- <button (click)="newTrigger1()" class="skin_arth_buttons">
             <span class="sub-title main-color">
-                <!-- <i class="flaticon-198-hashtag-1"></i> -->Sexual Health
+                Sexual Health
             </span>
-        </button>
+        </button> -->
         <button (click)="newTrigger2()" class="skin_arth_buttons">
             <span class="sub-title main-color">
                 <!-- <i class="flaticon-198-hashtag-1"></i> -->Softwave Therapy
@@ -127,7 +127,7 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="skin-care-services-card ">
                     <div class="services-image">
-                        <a routerLink="/sexualHealth" class="d-block">
+                        <a routerLink="/weightLoss" class="d-block">
                             <img src="../../../../assets/images/weight loss/1.png" alt="image">
                         </a>
                         <!-- <div class="icon">
@@ -136,11 +136,63 @@
                     </div>
                     <div class="services-content text-center">
                         <h3>
-                            <a routerLink="/sexualHealth text-center">
+                            <a routerLink="/weightLoss">
                                 Weight Loss Management
                             </a>
                         </h3>
                         <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- newly added -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card ">
+                    <div class="services-image">
+                        <a routerLink="/chemicalPeel" class="d-block">
+                            <img src="../../../../assets/images/home page/cards/2.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/chemicalPeel">
+                                Chemical Peels
+                            </a>
+                        </h3>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card ">
+                    <div class="services-image">
+                        <a routerLink="/ivtherapy" class="d-block">
+                            <img src="../../../../assets/images/home page/cards/1.jpg" alt="image">
+                        </a>
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/ivtherapy">
+                                IV Nutrient Therapy
+                            </a>
+                        </h3>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="skin-care-services-card ">
+                    <div class="services-image">
+                        <a routerLink="/sexualHealth" class="d-block">
+                            <img src="../../../../assets/images/o shot/1.png" alt="image">
+                        </a>
+                    </div>
+                    <div class="services-content text-center">
+                        <h3>
+                            <a routerLink="/sexualHealth">
+                                Sexual Health
+                            </a>
+                        </h3>
+                       
                     </div>
                 </div>
             </div>
@@ -186,15 +238,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <!-- <div class="col-lg-4 col-sm-6">
                 <div class="skin-care-services-card">
                     <div class="services-image">
                         <a routerLink="/osteoarthritis" class="d-block">
                             <img src="../../../../assets/images/orth/12.png" alt="image">
                         </a>
-                        <!-- <div class="icon">
-                            <i class="flaticon-174-hair-removal"></i>
-                        </div> -->
                     </div>
                     <div class="services-content text-center">
                         <h3>
@@ -202,10 +251,10 @@
                                 Hips
                             </a>
                         </h3>
-                        <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                        
                     </div>
                 </div>
-            </div>       
+            </div>        -->
         </div>      
 
         <div *ngIf="sexualHealth" class="row justify-content-center">
@@ -215,9 +264,6 @@
                         <a class="d-block">
                             <img src="../../../../assets/images/tissue regen/ortho gold.png" alt="image">
                         </a>
-                        <!-- <div class="icon">
-                            <i class="flaticon-172-skin-care"></i>
-                        </div> -->
                     </div>
                     <div class="services-content text-center">
                         <h3>
@@ -235,9 +281,7 @@
                         <a  class="d-block">
                             <img src="../../../../assets/images/tissue regen/uro gold.png" alt="image">
                         </a>
-                        <!-- <div class="icon">
-                            <i class="flaticon-173-acupuncture"></i>
-                        </div> -->
+
                     </div>
                     <div class="services-content text-center">
                         <h3>
@@ -255,9 +299,7 @@
                         <a  class="d-block">
                             <img src="../../../../assets/images/tissue regen/derma gold.png" alt="image">
                         </a>
-                        <!-- <div class="icon">
-                            <i class="flaticon-174-hair-removal"></i>
-                        </div> -->
+
                     </div>
                     <div class="services-content text-center">
                         <h3>
@@ -271,16 +313,13 @@
             </div> 
              
         </div>  
-        <div *ngIf="tissueRegen" class="row justify-content-center">
+        <!-- <div *ngIf="tissueRegen" class="row justify-content-center">
             <div class="col-lg-4 col-sm-6">
                 <div class="skin-care-services-card">
                     <div class="services-image">
                         <a routerLink="/sexualHealth" class="d-block">
                             <img src="../../../../assets/images/o shot/1.png" alt="image">
                         </a>
-                        <!-- <div class="icon">
-                            <i class="flaticon-172-skin-care"></i>
-                        </div> -->
                     </div>
                     <div class="services-content text-center">
                         <h3>
@@ -288,10 +327,10 @@
                                 Sexual Health
                             </a>
                         </h3>
-                        <!-- <p>Vivamus magna justo lacinia eget consectetur sed convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p> -->
+                  
                     </div>
                 </div>
             </div>       
-        </div>  
+        </div>   -->
 </div>
 

@@ -66,7 +66,10 @@ import { MembershipComponent } from './components/pages/membership/membership.co
 import { TissueRegenComponent } from './components/pages/tissue-regen/tissue-regen.component';
 import { AppointmentComponent } from './components/common/appointment/appointment.component';
 // import { YourComponent } from './your-component/your-component.component';
-
+// import { IVTherapyComponent } from './iv-therapy/iv-therapy.component';
+import { IvComponent } from './components/pages/iv/iv.component';
+import { ChemicalPeelComponent } from './components/pages/chemical-peel/chemical-peel.component';
+import { PrpBreastComponent } from './components/pages/prp-breast/prp-breast.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -124,7 +127,8 @@ const routes: Routes = [
     {path: 'prpFacial', component: PrpFacialComponent},
     {path: 'dex-detox', component: DexDetoxComponent},
     {path: 'weightLoss', component: WeightLossComponent},
-    {path: 'breastUplift', component: BreastUpliftComponent},
+    // {path: 'breastUplift', component: BreastUpliftComponent},
+    {path: 'breastUplift', component: PrpBreastComponent},
     {path: 'hairRemoval', component:HairRemovalComponent},
     {path: 'scarRegen', component:ScarRegenComponent},
     {path: 'stretchMarks', component:StretchMarksComponent},
@@ -132,9 +136,11 @@ const routes: Routes = [
     {path: 'hairRes', component:HairRestorationComponent},
     {path: 'membership', component:MembershipComponent},
     {path: 'tissueRegen', component:TissueRegenComponent},
-    // {path: 'bookForm', component:AppointmentPageComponent},
-    { path: 'appointments/:section', component: AppointmentPageComponent},
-
+    { path: 'appointment/section', component: AppointmentPageComponent},
+    // {path:'ivtherapy',component:IVTherapyComponent},
+    {path:'ivtherapy', component:IvComponent},
+    {path:'chemicalPeel',component:ChemicalPeelComponent},
+    // { path: 'appointment/forms', redirectTo:'/appointment'},
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
 ];
 

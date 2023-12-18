@@ -140,6 +140,10 @@ import { HomeSoftComponent } from './components/common/home-soft/home-soft.compo
 // import { CarouselConfig } from 'ngx-bootstrap/carousel';
 // import { CarouselModule } from 'ngx-bootstrap/carousel' as BsCarouselModule;
 import { CarouselModule as NgxCarouselModule } from 'ngx-bootstrap/carousel';
+// import { IVTherapyComponent } from './iv-therapy/iv-therapy.component';
+import { IvComponent } from './components/pages/iv/iv.component';
+import { ChemicalPeelComponent } from './components/pages/chemical-peel/chemical-peel.component';
+import { PrpBreastComponent } from './components/pages/prp-breast/prp-breast.component';
 
 @NgModule({
 
@@ -207,6 +211,10 @@ import { CarouselModule as NgxCarouselModule } from 'ngx-bootstrap/carousel';
         NonMedicalComponent,
         HomeOrthoComponent,
         HomeSoftComponent,
+        // IVTherapyComponent,
+        IvComponent,
+        ChemicalPeelComponent,
+        PrpBreastComponent,
         // AngularFireModule,
         
     ],

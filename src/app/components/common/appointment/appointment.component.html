@@ -1,6 +1,6 @@
 <!-- Default Appointment Section -->
 <div class="appointment-overview-area pb-100"
-    [ngClass]="{'d-none': router.url === '/' ||router.url === '/tissueRegen'|| router.url === '/home'  || router.url === '/tissueRegen' ||  router.url === '/membership'  ||router.url === '/meetOurTeam'|| router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}">
+    [ngClass]="{'d-none': router.url === '/' || router.url ==='/appointment;section=targetSection' ||router.url === '/tissueRegen'|| router.url === '/home'  || router.url === '/tissueRegen' ||  router.url === '/membership'  ||router.url === '/meetOurTeam'|| router.url === '/index-8' || router.url === '/appointment' || router.url === '/about-us-3'}">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-12">
@@ -217,7 +217,7 @@
 
 <!-- Appointment Section for Home Demo - 3 -->
 <div class="appointment-area d-none"
-    [ngClass]="{'d-block': router.url === '/home' || router.url === '/appointment' ||router.url === '/'||  router.url === '/tissueRegen' ||router.url === '/meetOurTeam' || router.url === '/membership'}">
+    [ngClass]="{'d-block': router.url === '/home'|| router.url ==='/appointment;section=targetSection' || router.url === '/appointment' ||router.url === '/'||  router.url === '/tissueRegen' ||router.url === '/meetOurTeam' || router.url === '/membership'}">
     <!-- <div class="container">
         <div class="appointment-form">
             <h4>

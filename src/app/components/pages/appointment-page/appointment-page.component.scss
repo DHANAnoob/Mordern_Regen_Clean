@@ -1,3 +1,20 @@
+.scrollLinkOrg{
+    cursor: pointer;
+}
+
 .scrollLink{
     cursor: pointer;
+    // margin-top: 200px;
+    // position: relative;
+    // left: 30%;
+}
+.default-btn{
+    background-color: #002345;
+}
+@media screen and (max-width:700px) {
+    // .scrollLink{
+    //     margin-top: 75px;
+    //     position: relative;
+    //     left: 10%;
+    // }
 }
